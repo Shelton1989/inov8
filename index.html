@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/custom.css">
+        <!--Favicon-->
+        <link rel="icon" href="./src/img/favicon.ico" type="images/x-icon">
+        <link rel="shortcut icon" href="./src/img/favicon.ico" type="images/x-icon">
+        <!--Title-->
+        <title>Inov8: Web design | Web development | Marketing | Branding | SEO</title>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Inov8 helps you get your business online correctly with services like branding, marketing, web design and search engine optimization.">
+
+    </head>
+    <body onscroll="navColor()">
+        <nav id="navbar" >
+            <div class="nav-wrapper container">
+                <a href="./index.html" class="brand-logo"><img class="navlogo" alt="Inov8 Logo" src="./src/img/logowhite.png" ></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="navlink active"><a id="home-menu" onclick="scrollToTop(); setActive(this)">Home</a></li>
+                    <li class="navlink"><a id="about-menu" onclick="scrollAbout(); setActive(this)">About</a></li>
+                    <li class="navlink"><a id="services-menu" onclick="scrollServices(); setActive(this)">Services</a></li>
+                    <li class="navlink"><a id="contact-menu" onclick="scrollContact(); setActive(this)">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div style="height: 800px" id="slider-wrapper" class="slider-wrapper" onload="setInterval()">
+            <div id="slide-1" class="slide" src="/src/slider-1.jpg">
+                <div id="caption-1" class="caption"></div>
+                <div class="caption-wrapper">
+                    <h1 class="heading">beDIFFERENT</h1>
+                    <h5 class="heading5">SEPARATE YOURSELF FROM THE NORM</h5>
+                </div>
+            </div>
+            <div id="slide-2" class="slide" src="/src/slider-2.jpg">
+                <div id="caption-2" class="caption"></div>
+                <div class="caption-wrapper">
+                    <h1 class="heading">beOUTSPOKEN</h1>
+                    <h5 class="heading5">REACH YOUR BASE WITH A STROKE OF THE KEYBOARD</h5>
+                </div>
+            </div>
+            <div id="slide-3" class="slide" src="/src/slider-3.jpg">
+                <div id="caption-3" class="caption"></div>
+                <div class="caption-wrapper">
+                    <h1 class="heading">beDRIVEN</h1>
+                    <h5 class="heading5">ENGAGE YOUR MARKET WITH FORCE</h5>
+                </div>
+            </div>
+            <div id="slide-4" class="slide" src="/src/slider-4.jpg">
+                <div id="caption-4" class="caption"></div>
+                <div class="caption-wrapper">
+                    <h1 class="heading">beCONNECTED</h1>
+                    <h5 class="heading5">BRIDGE THE GAP WITH YOUR CLIENTS</h5>
+                </div>
+            </div>
+            <div id="slide-5" class="slide" src="/src/slider-5.jpg">
+                <div id="caption-5" class="caption"></div>
+                <div class="caption-wrapper">
+                    <h1 class="heading">beUNIQUE</h1>
+                    <h5 class="heading5">STAND OUT IN A CROWD</h5>
+                </div>
+            </div>
+            <div class="buttons">
+                    <button id="back-button" onclick="handleBack()"><i class="medium material-icons">chevron_left</i></button>
+                    <button id="next-button" onclick="handleNext()"><i class="medium material-icons">chevron_right</i></button>
+            </div>
+        </div>
+        <div id="about" class="row content-wrapper">
+            <div class="container full-height">
+                <div class="col m6 full-height" style="padding-top:10%">
+                    <h2 class="grey-text text-lighten-4">ABOUT</h2>
+                    <p class="flow-text grey-text text-lighten-4">Inov8 is a dynamic company specialising in online brand awareness. Founded in 2014 as a web
+                        development company, we have continuously evolved with the times particularly in todays digital 
+                        age. We believe that any business is invisible without an online footprint and so, our services 
+                        opens your brand, business and identity to the nearly 3.9 billion internet users world wide. By 
+                        using a digital marketing strategy including rebranding your business for the next generation, 
+                        Inov8 opens your market to a global scale with the touch or swipe of a device.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="services" class="row content-wrapper">
+            <div class="container full-height" style="padding-top:10%">
+                <h2>SERVICES</h2>
+                <div class="row">
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">search</i> Search Engine Optimization</h4>
+                        <p>Be on the first page of search engines or suggested pages or control what users see when someone shares 
+                            your site. Optimize your website with a few lines of code built to make you visible.
+                        </p>
+                    </div>
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">share</i> Social Media</h4>
+                        <p>With 42% of the world population using social media, you cannot afford not to be. Tweets, posts, shares 
+                            and likes drive todays world and we can help you get connected.
+                        </p>
+                    </div>
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">screen_share</i> Digital Marketing</h4>
+                        <p>The key to success for any business is its ability to appeal to the masses and the gateway to 
+                            that appeal is a digital marketing strategy. A key ingredient to brand awareness in the digital age.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">public</i> Branding</h4>
+                        <p>A brand that is trust worthy, recognisible and confident speaks volumes to potential customers. 
+                            It tells your customers how serious you are about your company.
+                        </p>
+                    </div>
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">phonelink</i> Web Development</h4>
+                        <p>An experience is everything when customers decide to return, that's why a UI/UX is essential 
+                            to a company website. Let us develop a site that shows your attention to detail.
+                        </p>
+                    </div>
+                    <div class="col m4 full-height" >
+                        <h4 class="blue-text text-darken-1"><i class="material-icons">shopping_cart</i> Ecommerce</h4>
+                        <p>We develop online shopping experiences for your clients. Move from your mortar store to an
+                            online one that is accessible from any device and visible to millions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="row content-wrapper">
+            <div class="container full-height">
+                <div class="col m6 full-height" style="padding-top:10%">
+                    <h2 class="grey-text text-lighten-4">CONTACT</h2>
+                    <div class="card card-color">
+                        <div class="card-content">
+                            <form id="contact-form" action="." method="POST" enctype="text/plain">
+                                <div class="row">
+                                    <div class="input-field col m6">
+                                        <input id="First_name" type="text">
+                                        <label for="First_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col m6">
+                                        <input id="Last_name" type="text">
+                                        <label for="Last_name">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col m6">
+                                        <input id="Email" type="text">
+                                        <label for="Email">Email</label>
+                                    </div>
+                                    <div class="input-field col m6">
+                                        <input id="Contact_number" type="text">
+                                        <label for="Contact_number">Contact Number</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col m12">
+                                        <input id="Message" type="text">
+                                        <label for="Message">Message</label>
+                                    </div>
+                                </div>
+                                <h6 id="success-div" class="grey-text text-lighten-4"></h6>
+                                <button class="btn blue darken-4 waves-effect waves-light" type="submit" name="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="to-top"><a class="to-top" onclick="scrollToTop()"><i class="medium material-icons">arrow_upward</i></a></div>-->
+        <button class="to-top hoverable" onclick="scrollToTop()"><i class="small material-icons">expand_less</i></button>
+
+        <!-- footer to be included on every page -->
+        <footer class="page-footer black">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 m12">
+                        <h5 class="white-text">CONTACT US</h5>
+                        <ul>
+                            <li>+27 11 880 0777</li>
+                            <li>+27 61 569 3008</li>
+                            <li>2 PONGOLA STREET | JOHANNESBURG</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+                <div class="container">
+                    <span class="text-lighten-4 right">&copy; 2019 <a class="grey-text text-lighten-4" href="/index.html"> inov8 inc.</a></span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script type="text/javascript" src="/src/js/custom.js"></script>
+    </body>
+</html>

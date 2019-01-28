@@ -1,0 +1,277 @@
+body {
+    margin: auto;
+}
+#navbar {
+    position: fixed;
+    z-index: 10000;
+    box-shadow: none;
+    background-color: transparent;
+}
+.navlogo {
+    width: 150px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+}
+.navlogo:hover {
+    width: 165px;
+}
+.navlink {
+    position: relative;
+}
+.navlink::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 0%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+}
+.navlink:hover::after{
+    content: "";
+    width: 100%;
+    background: white;
+}
+.navlink.active::after{
+    content: "";
+    width: 100%;
+    background: white;
+}
+#slider-wrapper {
+    width: 100%;
+    background-color: black;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slide::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#slide-1 {
+    background-image: url('/src/img/slider-1.jpg');
+    opacity: 1;
+    transition: all 2s ease-out;
+}
+#slide-2 {
+    background-image: url('/src/img/slider-2.jpg');
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+#slide-3 {
+    background-image: url('/src/img/slider-3.jpg');
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+#slide-4 {
+    background-image: url('/src/img/slider-4.jpg');
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+#slide-5 {
+    background-image: url('/src/img/slider-5.jpg');
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+#slide-6 {
+    background-image: url('/src/img/slider-6.jpg');
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+.buttons {
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    width: 100%;
+}
+#next-button {
+    position: absolute;
+    right: 0;
+    height: 10rem;
+    width: 4rem;
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    background-image: linear-gradient(to right, #ffffff00, #000000a6);
+    background-color: transparent;
+    transition: all 0.05s ease-in-out;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+}
+#next-button:hover {
+    height: 10.75rem;
+    width: 4.75rem;
+    background-image: linear-gradient(to right, #ffffff00, #000000e1);
+    transition: all 0.05s ease-in-out;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+    cursor: pointer;
+}
+#back-button {
+    position: absolute;
+    left: 0;
+    height: 10rem;
+    width: 4rem;
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    background-image: linear-gradient(to right, #000000a6, #ffffff00);
+    background-color: transparent;
+    transition: all 0.05s ease-in-out;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+}
+#back-button:hover {
+    height: 10.75rem;
+    width: 4.75rem;
+    background-image: linear-gradient(to right, #000000e1, #ffffff00);
+    transition: all 0.05s ease-in-out;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+    cursor: pointer;
+}
+.caption {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.caption-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    padding-top: 30%;
+    padding-left: 10%;
+}
+.caption::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.51) 51%,rgba(0,0,0,0.57) 57%,rgba(0,0,0,0.69) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.heading {
+    margin-top: 0;
+}
+.to-top{
+    color: white;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    border-radius: 50%;
+    z-index: 10000;
+    cursor: pointer;
+    background-color: black;
+    width: 4rem;
+    height: 4rem;
+    border: 1px white solid;
+    text-align: center;
+    transition: all 0.05s ease-in-out;
+    -webkit-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+    -webkit-box-shadow: -8px 9px 18px -9px rgba(0,0,0,1);
+    -moz-box-shadow: -8px 9px 18px -9px rgba(0,0,0,1);
+    box-shadow: -8px 9px 18px -9px rgba(0,0,0,1);
+}
+.to-top:hover {
+    color: black;
+    background-color: white;
+}
+.to-top:focus {
+    color: white;
+    background-color: black;
+}
+.full-height {
+    height: 100%;
+}
+#about {
+    background-image: url('/src/img/sandton.jpg');
+    background-size: cover;
+    margin-block-end: 0;
+}
+#about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+#about * {
+    position: relative;
+}
+#contact {
+    background-image: url('/src/img/connections.png');
+    background-size: cover;
+    margin-block-end: 0;
+}
+#contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+#contact * {
+    position: relative;
+}
+.input-field label {
+    color: #fff;
+}
+.input-field input[type=text]:focus + label {
+    color: #fff;
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field .prefix.active {
+    color: #fff;
+}
+.p1 {
+    padding-top: 15%;
+}
+.card-color {
+    background-color: rgba(0, 0, 0, 0.562);
+    border: 1px solid white;
+}
+input {
+    color: white;
+}
+.cursor {
+    cursor: pointer;
+}
